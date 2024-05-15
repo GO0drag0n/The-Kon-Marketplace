@@ -1,0 +1,5 @@
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Data\obj\Release\net6.0\TheKonMarketplace.Data.csproj.AssemblyReference.cache
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Data\obj\Release\net6.0\TheKonMarketplace.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Data\obj\Release\net6.0\TheKonMarketplace.Data.AssemblyInfoInputs.cache
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Data\obj\Release\net6.0\TheKonMarketplace.Data.AssemblyInfo.cs
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Data\obj\Release\net6.0\TheKonMarketplace.Data.csproj.CoreCompileInputs.cache

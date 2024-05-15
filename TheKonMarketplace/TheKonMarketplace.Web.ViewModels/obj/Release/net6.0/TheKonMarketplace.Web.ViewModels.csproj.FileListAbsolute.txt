@@ -1,0 +1,5 @@
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.AssemblyInfo.cs
+C:\Users\konst\source\repos\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.csproj.CoreCompileInputs.cache
