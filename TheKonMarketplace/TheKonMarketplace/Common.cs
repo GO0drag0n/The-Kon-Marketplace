@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using System.Collections.Generic;
 using TheKonMarketplace.Web.ViewModels.Models;
 
 namespace TheKonMarketplace
@@ -40,6 +41,10 @@ namespace TheKonMarketplace
                     HorseImgUrl = "URLHERE",
                     HorsePrice = 3200
                 }
+                
+
+                
+                
             };
 
     }

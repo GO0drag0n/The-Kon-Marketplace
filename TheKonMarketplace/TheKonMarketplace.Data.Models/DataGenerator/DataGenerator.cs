@@ -98,8 +98,8 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                 },
                 new Offer()
                 {
-                    Id = 1,
-                    Title = "Thoroughbred - Antony",
+                    Id = 2,
+                    Title = "Thoroughbred - Anton",
                     Location = "Albania",
                     Description = "12 year for sudjuk",
                     ImageUrl = "https://horseyhooves.com/wp-content/uploads/2022/03/Beautiful-black-Friesian-horse-standing-in-a-grass-paddock.jpg.webp",
@@ -109,7 +109,7 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                 },
                 new Offer()
                 {
-                    Id = 1,
+                    Id = 3,
                     Title = "Arabian - Muhamed",
                     Location = "Albania, Kosovo",
                     Description = "Very fast horse",

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TheKonMarketplace.Models;
+using TheKonMarketplace.Web.ViewModels.Models;
 
 namespace TheKonMarketplace.Controllers
 {

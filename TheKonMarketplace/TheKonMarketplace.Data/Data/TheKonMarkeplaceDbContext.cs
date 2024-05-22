@@ -13,12 +13,13 @@ namespace TheKonMarketplace.Data.Data
             : base(options)
         {
         }
-
+        
 
         public DbSet<Seller> Sellers { get; set; } = null!;
         public DbSet<Breed> Breeds { get; set; } = null!;
         public DbSet<Offer> Offers { get; set; } = null!;
          
+       
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new IdentityUserConfiguration() );

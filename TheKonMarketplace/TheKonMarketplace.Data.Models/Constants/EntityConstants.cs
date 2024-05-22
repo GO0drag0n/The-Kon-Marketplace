@@ -12,7 +12,7 @@ namespace TheKonMarketplace.Data.Models.Constants
 
         public static class OfferConstants
         {
-            public const int TitleMaxLenght = 20;
+            public const int TitleMaxLenght = 100;
             public const int LoactionMaxLenght = 50;
             public const int DescriptionMaxLenght = 200;
             public const int PriceMinValue = 0;
@@ -28,7 +28,7 @@ namespace TheKonMarketplace.Data.Models.Constants
         {
             public const int PhoneNumberMaxLength = 15;
         }
-
+         
 
     }
 }
