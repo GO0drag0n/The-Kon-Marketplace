@@ -1,0 +1,13 @@
+﻿@model List<OfferViewModel>
+@{
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        <h4>@item.Title</h4>
+        <p>@item.Breed</p>
+        <p>@item.Price</p>
+        <img src="@item.ImageUrl"/>
+    </div>
+}

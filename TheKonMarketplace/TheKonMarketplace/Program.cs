@@ -6,12 +6,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<TheKonMarkeplaceDbContext>(options =>
+builder.Services.AddDbContext<TheKonMarketplaceDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<TheKonMarkeplaceDbContext>();
+    .AddEntityFrameworkStores<TheKonMarketplaceDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

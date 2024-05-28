@@ -6,10 +6,10 @@ using TheKonMarketplace.Data.Models.Configurations;
 
 namespace TheKonMarketplace.Data.Data
 {
-    public class TheKonMarkeplaceDbContext : IdentityDbContext
+    public class TheKonMarketplaceDbContext : IdentityDbContext
     {
         
-        public TheKonMarkeplaceDbContext(DbContextOptions<TheKonMarkeplaceDbContext> options)
+        public TheKonMarketplaceDbContext(DbContextOptions<TheKonMarketplaceDbContext> options)
             : base(options)
         {
         }

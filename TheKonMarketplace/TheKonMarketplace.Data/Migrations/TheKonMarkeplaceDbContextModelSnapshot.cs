@@ -10,7 +10,7 @@ using TheKonMarketplace.Data.Data;
 
 namespace TheKonMarketplace.Data.Migrations
 {
-    [DbContext(typeof(TheKonMarkeplaceDbContext))]
+    [DbContext(typeof(TheKonMarketplaceDbContext))]
     partial class TheKonMarkeplaceDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

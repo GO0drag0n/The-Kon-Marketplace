@@ -11,7 +11,7 @@ using TheKonMarketplace.Data.Data;
 
 namespace TheKonMarketplace.Data.Migrations
 {
-    [DbContext(typeof(TheKonMarkeplaceDbContext))]
+    [DbContext(typeof(TheKonMarketplaceDbContext))]
     [Migration("20240522074212_inital")]
     partial class inital
     {

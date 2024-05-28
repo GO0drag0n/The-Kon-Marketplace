@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheKonMarkeplace.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+414aae30f92fdffb14e42c9960645afe3c93d968")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e834b69d4307c5a470fa7f03779c727765f8f682")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheKonMarkeplace.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheKonMarkeplace.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
