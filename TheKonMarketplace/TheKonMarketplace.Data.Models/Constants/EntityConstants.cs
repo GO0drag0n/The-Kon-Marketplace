@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheKonMarketplace.Data.Models.Constants
 {
-    internal class EntityConstants
+    public class EntityConstants
     {
         public const string DefaultPassword = "123456";
 

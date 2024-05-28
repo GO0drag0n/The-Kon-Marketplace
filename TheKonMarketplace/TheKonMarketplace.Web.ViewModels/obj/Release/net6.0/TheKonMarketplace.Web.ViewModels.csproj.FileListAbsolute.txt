@@ -18,3 +18,8 @@ C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketpl
 C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.pdb
 C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMarketplace.Web.ViewModels.genruntimeconfig.cache
 C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\ref\TheKonMarketplace.Web.ViewModels.dll
+C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\bin\Release\net6.0\TheKonMarkeplace.Common.dll
+C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\bin\Release\net6.0\TheKonMarketplace.Data.Models.dll
+C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\bin\Release\net6.0\TheKonMarketplace.Data.Models.pdb
+C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\bin\Release\net6.0\TheKonMarkeplace.Common.pdb
+C:\Users\konst\source\repos\The-Kon-Marketplace\TheKonMarketplace\TheKonMarketplace.Web.ViewModels\obj\Release\net6.0\TheKonMa.66D4B74E.Up2Date

@@ -551,8 +551,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.9",
           "Microsoft.AspNetCore.Identity.UI": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
-          "TheKonMarkeplace.Common": "1.0.0",
-          "TheKonMarketplace.Web.ViewModels": "1.0.0"
+          "TheKonMarkeplace.Common": "1.0.0"
         },
         "runtime": {
           "TheKonMarketplace.Data.Models.dll": {}
@@ -563,7 +562,8 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.9",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.9",
           "Microsoft.AspNetCore.Identity.UI": "6.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "TheKonMarketplace.Data.Models": "1.0.0"
         },
         "runtime": {
           "TheKonMarketplace.Web.ViewModels.dll": {}

@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using TheKonMarketplace.Data.Models
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@{
+    bool isUser = User.IsInRole("User");
+    bool isSeller = User.IsInRole("Seller");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -25,6 +34,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="Offers">Offers</a>
                         </li>
+                        @{
+
+                            if (isUser)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="BecomeSeller">Become a seller</a>
+                                </li>
+                            }
+                            else if (isSeller)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="Add">Add an offer</a>
+                                </li>
+                            }
+                        }
+                        
+                        
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

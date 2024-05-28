@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheKonMarketplace.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e834b69d4307c5a470fa7f03779c727765f8f682")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79d0337cd9d4447ce7e057e822dd3a8bfb6f3419")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheKonMarketplace.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheKonMarketplace.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

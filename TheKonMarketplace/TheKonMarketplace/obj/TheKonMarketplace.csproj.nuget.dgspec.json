@@ -124,9 +124,6 @@
             "projectReferences": {
               "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarkeplace.Common\\TheKonMarkeplace.Common.csproj": {
                 "projectPath": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarkeplace.Common\\TheKonMarkeplace.Common.csproj"
-              },
-              "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace.Web.ViewModels\\TheKonMarketplace.Web.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace.Web.ViewModels\\TheKonMarketplace.Web.ViewModels.csproj"
               }
             }
           }
@@ -316,7 +313,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace.Data.Models\\TheKonMarketplace.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace.Data.Models\\TheKonMarketplace.Data.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -442,19 +443,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.29, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.29, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.29, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.29, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [

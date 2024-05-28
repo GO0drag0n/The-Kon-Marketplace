@@ -18,6 +18,8 @@ namespace TheKonMarketplace.Controllers
         [HttpGet]
         public IActionResult Add() //vpage visualization 
         {
+
+
             return View();
         }
 

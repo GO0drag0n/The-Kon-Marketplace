@@ -1,0 +1,47 @@
+﻿@model CreateOfferViewModel
+@{
+}
+
+<h1 class="title">Add Your Offer</h1>
+
+<form class="main input">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label>Title</label>
+    <input type="text" id="title" />
+    <label>Breed</label>
+    <input type="text" id="breed" />
+    <label>Price</label>
+    <input type="text" id="price" />
+    <label>Image URL</label>
+    <input type="text" id="imageUrl" />
+    <label>Discription</label>
+    <input type="text" id="discription" />
+    <label>Location</label>
+    <input type="text" id="location" />
+    <button class="createButton" id="create" type="submit">Create</button>
+</form>
+
+<style  >
+    .title {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .createButton{
+                margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }

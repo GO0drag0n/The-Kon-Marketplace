@@ -21,7 +21,8 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                     UserName = "agent@mail.com",
                     NormalizedUserName = "AGENT@MAIL.COM",
                     Email = "agent@mail.com",
-                    NormalizedEmail = "AGENT@MAIL.COM"
+                    NormalizedEmail = "AGENT@MAIL.COM",
+                    PhoneNumber = "+359888888888",
                 },
                 new IdentityUser()
                 {
@@ -40,21 +41,6 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
             }
 
             return users;
-        }
-
-        public static IEnumerable<Seller> SeedSellers()
-        {
-            var agents = new List<Seller>()
-            {
-                new Seller()
-                {
-                    Id = Guid.Parse("44a41a1c-943b-47e2-80e6-47463b6f139b"),
-                    PhoneNumber = "+359888888888",
-                    UserId = "dea12856-c198-4129-b3f3-b893d8395082",
-                },
-            };
-
-            return agents;
         }
 
         public static IEnumerable<Breed> SeedBreeds()
@@ -81,6 +67,25 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
             return categories;
         }
 
+        public static IEnumerable<IdentityRole> SeedRoles() 
+        {
+            return new List<IdentityRole>()
+            {
+                new IdentityRole()
+                {
+                    Id = "484d5e1f-080d-4bc6-a5be-fbab112098b2",
+                    Name = "Seller",
+                    NormalizedName = "SELLER"
+                },
+                new IdentityRole()
+                {
+                    Id = "08e9b95d-3b67-46e5-bdd5-8f850ed416e6",
+                    Name = "User",
+                    NormalizedName = "USER"
+                },
+            };
+        }
+
         public static IEnumerable<Offer> SeedOffer()
         {
             var houses = new List<Offer>()
@@ -94,7 +99,7 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                     ImageUrl = "https://horseyhooves.com/wp-content/uploads/2020/10/American-Quarter-Horse-1.jpg",
                     Price = 2100.00M,
                     BreedId = 3,
-                    UserId = Guid.Parse("44a41a1c-943b-47e2-80e6-47463b6f139b")
+                    UserId = "dea12856-c198-4129-b3f3-b893d8395082"
                 },
                 new Offer()
                 {
@@ -105,7 +110,7 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                     ImageUrl = "https://horseyhooves.com/wp-content/uploads/2022/03/Beautiful-black-Friesian-horse-standing-in-a-grass-paddock.jpg.webp",
                     Price = 1500.00M,
                     BreedId = 3,
-                    UserId = Guid.Parse("44a41a1c-943b-47e2-80e6-47463b6f139b")
+                    UserId = "dea12856-c198-4129-b3f3-b893d8395082"
                 },
                 new Offer()
                 {
@@ -116,7 +121,7 @@ namespace TheKonMarketplace.Data.Models.DataGenerator
                     ImageUrl = "https://horseyhooves.com/wp-content/uploads/2020/10/Arabian-horse-breed-1.jpg",
                     Price = 2100.00M,
                     BreedId = 2,
-                    UserId = Guid.Parse("44a41a1c-943b-47e2-80e6-47463b6f139b")
+                    UserId = "dea12856-c198-4129-b3f3-b893d8395082"
                 }
             };
 
