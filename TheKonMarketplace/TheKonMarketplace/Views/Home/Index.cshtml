@@ -2,60 +2,59 @@
     ViewData["Title"] = "Home Page";
 }
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Kon Marketplace</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif; /* Provides a clean, readable font */
-            margin: 0;
-            padding: 0;
-            color: #333; /* Dark grey color for good readability */
-        }
-
-        .site-header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f4f4f4; /* Light grey background for the header */
-            margin-bottom: 20px; /* Separation from the hero image */
-        }
-
-        .site-header h1 {
-            font-size: 36px; /* Large font size for visibility */
-            color: #204a87; /* Blue, matches your branding */
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block; /* Removes any extra space around the image */
-        }
-
-        .site-footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #f4f4f4; /* Consistent with the header */
-            position: fixed;
-            width: 100%;
-            bottom: 0; /* Keeps the footer at the bottom of the view */
-        }
-
-    </style>
 </head>
 <body>
-    <header class="site-header">
-        <h1>The Kon Marketplace</h1>
-    </header>
-    <div class="hero-image">
-        <img src="~/horsecover.jpg" alt="Featured Horse">
-    </div>
-    <footer class="site-footer">
-        © 2024 The Kon Marketplace. All rights reserved.
-    </footer>
+        <img src="~/DALL·E-2024-06-05-16.49.jpg" alt="Featured Horse" id="featured-image">
+
 </body>
 </html>
 
+
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensures the body takes full width of the viewport */
+        height: 100%; /* Ensures the body takes full height of the viewport */
+        overflow-x: hidden; /* Prevents horizontal scroll */
+    }
+
+    .mb-3 {
+        margin-bottom: 0 !important;
+    }
+
+    /* Ensures the .container is full-width and has no max-width */
+    .container {
+        width: 100vw; /* Make the container full width */
+        max-width: none; /* Remove maximum width restrictions */
+        padding: 0; /* Consistent padding */
+        margin: 0; /* Center the container */
+
+    }
+
+    /* Styles for the image to fill the width and set a specific height */
+    #featured-image {
+        width: 100%; /* Full width of the screen */
+        height: 66.67vh; /* 2/3 of the screen height */
+        object-fit: cover; /* This will cover the area of the image box without distorting the image */
+        margin: 0; /* Ensure there is no additional margin */
+        padding:0;
+    }
+
+    img {
+        width: 100vw; /* Full width of the viewport */
+        padding-left: 0; /* No padding on the left */
+        min-width: 100vw; /* Ensure it does not shrink below the viewport width */
+        margin: 0; /* Ensure there is no additional margin */
+        padding: 0;
+    }
+    
+
+</style>

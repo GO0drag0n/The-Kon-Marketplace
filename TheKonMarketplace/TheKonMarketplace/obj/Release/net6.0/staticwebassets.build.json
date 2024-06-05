@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6myeheWq47uQ761Je3umJAvr2WIr6dglud6vvpzn6TQ=",
+  "Hash": "cnBtPRC5118z/mG/POsm4xGt1Lbp35Mpko/tCd5txmY=",
   "Source": "TheKonMarketplace",
   "BasePath": "_content/TheKonMarketplace",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace\\wwwroot\\DALL·E-2024-06-05-16.49.jpg",
+      "SourceId": "TheKonMarketplace",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace\\wwwroot\\",
+      "BasePath": "_content/TheKonMarketplace",
+      "RelativePath": "DALL·E-2024-06-05-16.49.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\DALL·E-2024-06-05-16.49.jpg"
     },
     {
       "Identity": "C:\\Users\\konst\\source\\repos\\The-Kon-Marketplace\\TheKonMarketplace\\TheKonMarketplace\\wwwroot\\favicon.ico",
