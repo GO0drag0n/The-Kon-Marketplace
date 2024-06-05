@@ -1,8 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,51 +6,85 @@
     <title>The Kon Marketplace</title>
 </head>
 <body>
+    <div class="image-container">
         <img src="~/DALL·E-2024-06-05-16.49.jpg" alt="Featured Horse" id="featured-image">
-
+        <div class="overlay">
+            <h1>Welcome to The Kon Marketplace</h1>
+            <button onclick="location.href='url-to-sell-page';">Sell your horse</button>
+        </div>
+    </div>
 </body>
 </html>
-
-
 
 <style>
     html, body {
         margin: 0;
         padding: 0;
-        width: 100%; /* Ensures the body takes full width of the viewport */
-        height: 100%; /* Ensures the body takes full height of the viewport */
-        overflow-x: hidden; /* Prevents horizontal scroll */
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
     }
 
-    .mb-3 {
-        margin-bottom: 0 !important;
-    }
-
-    /* Ensures the .container is full-width and has no max-width */
     .container {
         width: 100vw; /* Make the container full width */
         max-width: none; /* Remove maximum width restrictions */
         padding: 0; /* Consistent padding */
         margin: 0; /* Center the container */
-
     }
 
-    /* Styles for the image to fill the width and set a specific height */
-    #featured-image {
-        width: 100%; /* Full width of the screen */
-        height: 66.67vh; /* 2/3 of the screen height */
-        object-fit: cover; /* This will cover the area of the image box without distorting the image */
-        margin: 0; /* Ensure there is no additional margin */
-        padding:0;
-    }
-
-    img {
-        width: 100vw; /* Full width of the viewport */
-        padding-left: 0; /* No padding on the left */
-        min-width: 100vw; /* Ensure it does not shrink below the viewport width */
-        margin: 0; /* Ensure there is no additional margin */
+    .image-container {
+        position: relative;
+        width: 100vw;
+        height: 66.67vh; /* Adjust height if necessary */
+        margin: 0;
         padding: 0;
     }
-    
 
+    #featured-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Aligns h1 on top and button on bottom */
+        align-items: center; /* Centers content horizontally */
+    }
+
+        .overlay h1 {
+            margin-top: 3%;
+            font-size: 3em;
+            color: white;
+            font-weight: bold;
+        }
+
+    button {
+        margin-bottom: -2vh; /* Adjusted bottom margin */
+        padding: 15px 30px;
+        background-color: #007bff; /* Bootstrap primary blue */
+        color: white;
+        border: none;
+        border-radius:12px;
+        cursor: pointer;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue for hover effect */
+        }
+
+    /* Ensure there is no gap */
+    img, .mb-3 {
+        margin-bottom: 0 !important;
+        padding: 0;
+    }
 </style>
