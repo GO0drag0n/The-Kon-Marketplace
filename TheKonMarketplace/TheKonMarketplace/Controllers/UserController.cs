@@ -21,8 +21,14 @@ namespace TheKonMarketplace.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult BecomeSeller()
         {
+            if(User.IsInRole("Seller"))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             BecomeSellerFormModel model = new BecomeSellerFormModel();
 
             return View(model);
