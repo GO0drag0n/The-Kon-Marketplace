@@ -43,7 +43,7 @@ namespace TheKonMarketplace.Data.Models
         [Required]
         [ForeignKey(nameof(User))]
         public string UserId { get; set; }
-        public User User { get; set; } = null!;
+        public Seller User { get; set; } = null!;
         
         public DateTime CreatedAt { get; set; }
 

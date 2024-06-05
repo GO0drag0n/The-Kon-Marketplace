@@ -1,0 +1,88 @@
+﻿@model BecomeSellerFormModel;
+
+
+<form asp-controller="User" asp-action="BecomeSeller" method="post" class="form-container">
+    <h1 class="form-header">Become a Seller</h1>
+    <div class="form-group">
+        <label for="phoneNumber" class="form-label">Phone Number</label>
+        <input id="phoneNumber" asp-for="@Model.PhoneNumber" class="form-input" type="text" />
+        <span asp-validation-for="@Model.PhoneNumber" class="form-error"></span>
+    </div>
+    <button class="form-button" type="submit">Submit</button>
+    <p class="form-text">To become a seller, please provide a valid phone number.</p>
+</form>
+
+
+
+
+<style>
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: auto;
+        max-width: 500px;
+        background-color: #f4f8ff; /* Light blue background */
+        border: 1px solid #d1e3f8; /* Soft blue border */
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .form-header {
+        font-size: 28px;
+        color: #204a87; /* Deep blue for text */
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        font-size: 16px;
+        color: #204a87; /* Matching text color */
+        margin-bottom: 8px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #aac4e2; /* Lighter blue border */
+        border-radius: 5px;
+        box-sizing: border-box; /* Includes padding and border in the element's width */
+    }
+
+    .form-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff; /* Vibrant blue for the button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .form-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+    .form-error {
+        color: #e3342f; /* Error color */
+        font-size: 14px;
+    }
+
+    .form-text {
+        font-size: 14px;
+        color: #204a87; /* Deep blue for text */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+</style>

@@ -24,18 +24,18 @@ namespace TheKonMarketplace.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
-        private readonly IUserStore<User> _userStore;
-        private readonly IUserEmailStore<User> _emailStore;
+        private readonly SignInManager<Seller> _signInManager;
+        private readonly UserManager<Seller> _userManager;
+        private readonly IUserStore<Seller> _userStore;
+        private readonly IUserEmailStore<Seller> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
-            UserManager<User> userManager,
-            IUserStore<User> userStore,
-            SignInManager<User> signInManager,
+            UserManager<Seller> userManager,
+            IUserStore<Seller> userStore,
+            SignInManager<Seller> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             RoleManager<IdentityRole> roleManager)
@@ -159,11 +159,11 @@ namespace TheKonMarketplace.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private User CreateUser()
+        private Seller CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<User>();
+                return Activator.CreateInstance<Seller>();
             }
             catch
             {
@@ -173,13 +173,13 @@ namespace TheKonMarketplace.Areas.Identity.Pages.Account
             }
         }
 
-        private IUserEmailStore<User> GetEmailStore()
+        private IUserEmailStore<Seller> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<User>)_userStore;
+            return (IUserEmailStore<Seller>)_userStore;
         }
     }
 }

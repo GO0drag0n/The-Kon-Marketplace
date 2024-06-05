@@ -6,7 +6,7 @@ using TheKonMarketplace.Data.Models.Configurations;
 
 namespace TheKonMarketplace.Data.Data
 {
-    public class TheKonMarketplaceDbContext : IdentityDbContext<User>
+    public class TheKonMarketplaceDbContext : IdentityDbContext<Seller>
     {
         
         public TheKonMarketplaceDbContext(DbContextOptions<TheKonMarketplaceDbContext> options)
@@ -15,7 +15,7 @@ namespace TheKonMarketplace.Data.Data
         }
         
 
-        public override DbSet<User> Users { get; set; } = null!;
+        public override DbSet<Seller> Users { get; set; } = null!;
         public DbSet<Breed> Breeds { get; set; } = null!;
         public DbSet<Offer> Offers { get; set; } = null!;
          

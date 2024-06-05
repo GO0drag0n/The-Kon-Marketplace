@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using TheKonMarketplace.Data.Models
-@inject SignInManager<User> SignInManager
-@inject UserManager<User> UserManager
+@inject SignInManager<Seller> SignInManager
+@inject UserManager<Seller> UserManager
 @{
     bool isUser = User.IsInRole("User");
     bool isSeller = User.IsInRole("Seller");
@@ -39,7 +39,7 @@
                             if (isUser)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Offer" asp-action="BecomeSeller">Become a seller</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="BecomeSeller">Become a seller</a>
                                 </li>
                             }
                             else if (isSeller)

@@ -10,12 +10,14 @@ namespace TheKonMarketplace.Data.Models.Configurations
     using DataGenerator;
     using Microsoft.EntityFrameworkCore;
 
-    public class SellerConfiguration : IEntityTypeConfiguration<User>
+
+    public class SellerConfiguration : IEntityTypeConfiguration<Seller>
     {
         
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<Seller> builder)
         {
             //builder.HasData(DataGenerator.SeedSellers());
+            
         }
     }
 }

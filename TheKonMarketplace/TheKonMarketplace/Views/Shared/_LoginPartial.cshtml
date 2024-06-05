@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using TheKonMarketplace.Data.Models
-@inject SignInManager<User> SignInManager
-@inject UserManager<User> UserManager
+@inject SignInManager<Seller> SignInManager
+@inject UserManager<Seller> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))

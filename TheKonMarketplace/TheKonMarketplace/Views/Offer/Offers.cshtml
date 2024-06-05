@@ -4,10 +4,56 @@
 
 @foreach (var item in Model)
 {
-    <div>
-        <h4>@item.Title</h4>
-        <p>@item.Breed</p>
-        <p>@item.Price</p>
-        <img src="@item.ImageUrl"/>
+    <div class="card">
+        <img src="@item.ImageUrl" alt="@item.Breed" class="card-img" />
+        <div class="card-body">
+            <h4 class="card-title">@item.Title</h4>
+            <p class="card-text">Breed: @item.Breed</p>
+            <p class="card-text">Price: @item.Price $</p>
+        </div>
     </div>
 }
+
+
+<style>
+
+    .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+        transition: 0.3s; /* Smooth transition for hover effect */
+        width: 300px; /* Fixed width, you can adjust as necessary */
+        margin: 20px; /* Space between cards */
+        border-radius: 10px; /* Rounded corners for the card */
+        overflow: hidden; /* Ensures no content peeks outside the border */
+        background-color: #fff; /* White background for the card */
+        display: inline-block; /* Align cards side by side */
+    }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a lifting effect */
+        }
+
+    .card-img {
+        width: 100%; /* Make the image cover the card width */
+        height: auto; /* Keep image aspect ratio */
+        border-top-left-radius: 10px; /* Rounded corners at the top of the image */
+        border-top-right-radius: 10px;
+    }
+
+    .card-body {
+        padding: 15px; /* Padding inside the card below the image */
+        text-align: left; /* Align text to the left */
+    }
+
+    .card-title {
+        font-size: 20px; /* Larger text for the title */
+        color: #333; /* Dark grey color for text for better readability */
+        margin-bottom: 10px; /* Space between title and text */
+    }
+
+    .card-text {
+        font-size: 16px; /* Adequate text size for readability */
+        color: #666; /* Lighter grey for the text */
+    }
+
+
+</style>
