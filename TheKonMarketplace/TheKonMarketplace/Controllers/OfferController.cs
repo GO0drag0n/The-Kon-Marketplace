@@ -5,6 +5,7 @@ using TheKonMarketplace.Data.Data;
 using TheKonMarketplace.Infrastructure;
 using TheKonMarketplace.Web.ViewModels.Models;
 using TheKonMarketplace.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TheKonMarketplace.Controllers
 {
@@ -18,16 +19,38 @@ namespace TheKonMarketplace.Controllers
         TheKonMarketplaceDbContext _dbContext;
         private readonly object data;
 
-        [HttpGet]
-        public IActionResult Add() //vpage visualization 
+        [HttpPost]
+        [Authorize(Roles = "Seller")]
+        public IActionResult Add(CreateOfferViewModel createOfferViewModel) //adding the offer
         {
+            Breed? breed = _dbContext.Breeds.FirstOrDefault(x => x.Name == createOfferViewModel.Breed);
 
+            if (breed == null)
+            {
+                breed = new Breed { Name = createOfferViewModel.Breed };
+                _dbContext.Breeds.Add(breed);
+                _dbContext.SaveChanges();
+            }
 
-            return View();
+            Offer offernew = new Offer
+            {
+                Title = createOfferViewModel.Title,
+                Description = createOfferViewModel.Description,
+                Price = createOfferViewModel.Price,
+                BreedId = breed.Id,
+                UserId = User.GetId(),
+                ImageUrl = createOfferViewModel.ImageUrl,
+                Location = createOfferViewModel.Location,
+            };
+            
+            _dbContext.Offers.Add(offernew);
+            _dbContext.SaveChanges();
+            
+            return RedirectToAction("Index", "Home");
         }
 
-        [HttpPost]
-        public IActionResult Add(OfferViewModel model) //adding the offer
+        [HttpGet]
+        public IActionResult Add() //vpage visualization 
         {
             return View();
         }

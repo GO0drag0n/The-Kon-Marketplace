@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using TheKonMarketplace.Data.Models
+@inject SignInManager<Seller> signInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +14,26 @@
         <img src="~/DALL·E-2024-06-05-16.49.jpg" alt="Featured Horse" id="featured-image">
         <div class="overlay">
             <h1>Welcome to The Kon Marketplace</h1>
-            <button onclick="location.href='url-to-sell-page';">Sell your horse</button>
+            
+            @{
+                if (signInManager.IsSignedIn(User))
+                {
+                    if (User.IsInRole("User"))
+                    {
+                        <form asp-controller="User" asp-action="BecomeSeller" method="get"> <button onclick="location.href='url-to-buy-page';">Sell a horse</button</form>
+                    }
+                    else if (User.IsInRole("Seller"))
+                    {
+                        <form asp-controller="Offer" asp-action="Add" method="get"> <button onclick="location.href='url-to-buy-page';">Sell a horse</button</form>
+                    }
+                }
+                else
+                {
+                    <form asp-area="Identity" asp-page="/Account/Login" method="getx"> <button onclick="location.href='url-to-buy-page';">Sell a horse</button</form>
+                }
+
+            
+            }
         </div>
     </div>
 </body>

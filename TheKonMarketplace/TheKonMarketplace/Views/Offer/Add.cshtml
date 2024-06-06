@@ -4,31 +4,31 @@
 
 <h1 class="title">Add Your Offer</h1>
 
-<form class="main-form">
+<form class="main-form" asp-controller="Offer" asp-action="Add">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label for="title">Title</label>
-        <input type="text" id="title" class="form-input" />
+        <input asp-for="Title" type="text" id="title" class="form-input" />
     </div>
     <div class="form-group">
         <label for="breed">Breed</label>
-        <input type="text" id="breed" class="form-input" />
+        <input asp-for="Breed" type="text" id="breed" class="form-input" />
     </div>
     <div class="form-group">
         <label for="price">Price</label>
-        <input type="text" id="price" class="form-input" />
+        <input asp-for="Price" type="text" id="price" class="form-input" />
     </div>
     <div class="form-group">
         <label for="imageUrl">Image URL</label>
-        <input type="text" id="imageUrl" class="form-input" />
+        <input asp-for="ImageUrl" type="text" id="imageUrl" class="form-input" />
     </div>
     <div class="form-group">
         <label for="discription">Description</label>
-        <input type="text" id="discription" class="form-input" />
+        <input asp-for="Description" type="text" id="discription" class="form-input" />
     </div>
     <div class="form-group">
         <label for="location">Location</label>
-        <input type="text" id="location" class="form-input" />
+        <input asp-for="Location" type="text" id="location" class="form-input" />
     </div>
     <button class="create-button" type="submit">Create</button>
 </form>
