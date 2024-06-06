@@ -72,16 +72,41 @@ namespace TheKonMarketplace.Controllers
             return View(offers);
         }
 
+        [HttpGet]
         public IActionResult Mine()
         {
+            List<OfferViewModel> myOffers = _dbContext.Offers
+                .Where(x => x.UserId == User.GetId())
+                .Select(x => new OfferViewModel
+                {
+                    OfferId = x.Id,
+                    Title = x.Title,
+                    Breed = x.Breed.Name,
+                    Price = x.Price,
+                    ImageUrl = x.ImageUrl
+                }).ToList();
+
             //1. IOfferService - inteface public List<OfferViewModel> GetMyOffers(string userId);
             //2. OfferService - class -> dbContext -> public List<OfferViewModel> GetMyOffers(string userId)
             //3. Method in OfferService - GetMyOffers
             /*var allOffers = offerService.GetMyOffers(User.GetId(ClaimTypes.NameIdentifier));*/
 
 
-            return View();
+            return View(myOffers);
         }
 
+        [HttpPost]
+        public IActionResult Delete(int offerId)
+        {
+            Offer? offer = _dbContext.Offers.FirstOrDefault(x => x.Id == offerId);
+            if(offer == null)
+            {
+                return BadRequest();
+            }
+
+            _dbContext.Offers.Remove(offer);
+            _dbContext.SaveChanges();
+            return RedirectToAction("Mine");
+        }
     }
 }
