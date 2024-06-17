@@ -25,13 +25,6 @@ namespace TheKonMarketplace.Controllers
         {
             Breed? breed = _dbContext.Breeds.FirstOrDefault(x => x.Name == createOfferViewModel.Breed);
 
-            if (breed == null)
-            {
-                breed = new Breed { Name = createOfferViewModel.Breed };
-                _dbContext.Breeds.Add(breed);
-                _dbContext.SaveChanges();
-            }
-
             Offer offernew = new Offer
             {
                 Title = createOfferViewModel.Title,
@@ -42,9 +35,17 @@ namespace TheKonMarketplace.Controllers
                 ImageUrl = createOfferViewModel.ImageUrl,
                 Location = createOfferViewModel.Location,
             };
-            
-            _dbContext.Offers.Add(offernew);
-            _dbContext.SaveChanges();
+
+            if (offernew == null)
+            {
+                 return BadRequest();
+            }
+            else
+            {
+                _dbContext.Offers.Add(offernew);
+                _dbContext.SaveChanges();
+            }
+
             
             return RedirectToAction("Index", "Home");
         }

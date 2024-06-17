@@ -7,32 +7,41 @@
 <form class="main-form" asp-controller="Offer" asp-action="Add">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
-        <label for="title">Title</label>
-        <input asp-for="Title" type="text" id="title" class="form-input" />
+        <label asp-for="@Model.Title"></label>
+        <input asp-for="@Model.Title" type="text" id="title" class="form-input" />
+        <span asp-validation-for="@Model.Title" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="breed">Breed</label>
-        <input asp-for="Breed" type="text" id="breed" class="form-input" />
+        <label asp-for="@Model.Breed">Breed</label>
+        <input asp-for="@Model.Breed" type="text" id="breed" class="form-input" />
+        <span asp-validation-for="@Model.Breed" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="price">Price</label>
-        <input asp-for="Price" type="text" id="price" class="form-input" />
+        <label asp-for="@Model.Price">Price</label>
+        <input asp-for="@Model.Price" type="text" id="price" class="form-input" />
+        <span asp-validation-for="@Model.Price" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="imageUrl">Image URL</label>
-        <input asp-for="ImageUrl" type="text" id="imageUrl" class="form-input" />
+        <label asp-for="@Model.ImageUrl">Image URL</label>
+        <input asp-for="@Model.ImageUrl" type="text" id="imageUrl" class="form-input" />
+        <span asp-validation-for="@Model.ImageUrl" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="discription">Description</label>
-        <input asp-for="Description" type="text" id="discription" class="form-input" />
+        <label asp-for="@Model.Description">Description</label>
+        <input asp-for="@Model.Description" type="text" id="discription" class="form-input" />
+        <span asp-validation-for="@Model.Description" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="location">Location</label>
-        <input asp-for="Location" type="text" id="location" class="form-input" />
+        <label asp-for="@Model.Location">Location</label>
+        <input asp-for="@Model.Location" type="text" id="location" class="form-input" />
+        <span asp-validation-for="@Model.Location" class="text-danger"></span>
     </div>
     <button class="create-button" type="submit">Create</button>
 </form>
 
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}
 
 <style>
 

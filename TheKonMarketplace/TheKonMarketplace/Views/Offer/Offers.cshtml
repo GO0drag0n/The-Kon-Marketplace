@@ -4,14 +4,17 @@
 
 @foreach (var item in Model)
 {
-    <div class="card">
-        <img src="@item.ImageUrl" alt="@item.Breed" class="card-img" />
-        <div class="card-body">
-            <h4 class="card-title">@item.Title</h4>
-            <p class="card-text">Breed: @item.Breed</p>
-            <p class="card-text">Price: @item.Price $A</p>
+    <a >
+        <div class="card">
+            <img src="@item.ImageUrl" alt="@item.Breed" class="card-img" />
+            <div class="card-body">
+                <h4 class="card-title">@item.Title</h4>
+                <p class="card-text">Breed: @item.Breed</p>
+                <p class="card-text">Price: @item.Price $A</p>
+            </div>
         </div>
-    </div>
+    </a>
+    
 }
 
 
@@ -20,12 +23,15 @@
     .card {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
         transition: 0.3s; /* Smooth transition for hover effect */
-        width: 300px; /* Fixed width, you can adjust as necessary */
+        width: 300px; /* Fixed width, adjust as necessary */
         margin: 20px; /* Space between cards */
         border-radius: 10px; /* Rounded corners for the card */
         overflow: hidden; /* Ensures no content peeks outside the border */
         background-color: #fff; /* White background for the card */
         display: inline-block; /* Align cards side by side */
+        text-decoration: none; /* No underline on the link */
+        color: inherit; /* Inherit text color from parent */
+        cursor: pointer;
     }
 
         .card:hover {

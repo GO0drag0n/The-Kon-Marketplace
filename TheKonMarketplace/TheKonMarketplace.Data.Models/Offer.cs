@@ -18,6 +18,7 @@ namespace TheKonMarketplace.Data.Models
 
         [Required]
         [MaxLength(TitleMaxLenght)]
+        [MinLength(2)]
         public string Title { get; set; } = null!;
         [Required]
         [MaxLength(LoactionMaxLenght)] 
