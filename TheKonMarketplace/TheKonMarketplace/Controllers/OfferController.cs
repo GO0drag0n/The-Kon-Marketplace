@@ -51,7 +51,6 @@ namespace TheKonMarketplace.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [ValidateAntiForgeryToken]
         [HttpGet]
         public IActionResult Add()
         {
@@ -80,7 +79,7 @@ namespace TheKonMarketplace.Controllers
             return View(offers);
         }
 
-        [ValidateAntiForgeryToken]
+
         [HttpGet]
         public IActionResult Mine()
         {
