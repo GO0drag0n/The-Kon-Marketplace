@@ -16,8 +16,11 @@ namespace TheKonMarketplace.Data.Models.Configurations
         
         public void Configure(EntityTypeBuilder<Seller> builder)
         {
-            //builder.HasData(DataGenerator.SeedSellers());
-            
+/*            builder.HasMany(s => s.Offers)
+               .WithOne(o => o.Seller)
+               .HasForeignKey(o => o.UserId)
+               .OnDelete(DeleteBehavior.Cascade);
+*/
         }
     }
 }

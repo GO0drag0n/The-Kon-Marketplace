@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TheKonMarketplace.Data.Models.Constants;
+using TheKonMarketplace.Web.ViewModels.Breed;
 
 namespace TheKonMarketplace.Web.ViewModels.Models
 {
@@ -13,17 +14,25 @@ namespace TheKonMarketplace.Web.ViewModels.Models
         [Required]
         [StringLength(EntityConstants.OfferConstants.TitleMaxLenght)]
         public string Title { get; set; } = null!;
-        [Required]
-        [StringLength(EntityConstants.BreedConstants.NameMaxLength)]
-        public string Breed { get; set; } = null!;
+
+        //[Required]
+        //[StringLength(EntityConstants.BreedConstants.NameMaxLength)]
+        //public string Breed { get; set; } = null!;
+
         [StringLength(EntityConstants.OfferConstants.DescriptionMaxLenght)]
         public string Description { get; set; } = null!;
+
         [Required]
         public string ImageUrl { get; set; } = null!;
+
         [Required]
         [Range(EntityConstants.OfferConstants.PriceMinValue, EntityConstants.OfferConstants.PriceMaxValue)]
         public decimal Price { get; set; }
 
         public string Location { get; set; } = null!;
+
+        // DROPDOWN MENU BY THE TEACHER
+        public IEnumerable<BreedViewModel> Breeds { get; set; } = new List<BreedViewModel>();
+        public int BreedId { get; set; }
     }
 }

@@ -19,6 +19,12 @@ namespace TheKonMarketplace.Web.ViewModels.Models
         [Required(ErrorMessage = "Enter a valid image URL.")]
         public string ImageUrl { get; set; } = null!;
 
+        public string Location { get; set; } = null!;
+        public string Description { get; set; } = null!;
+
+        public string SellerEmail { get; set; }
+        public string SellerPhone { get; set; }
+
         public int OfferId { get; set; }
 
     }

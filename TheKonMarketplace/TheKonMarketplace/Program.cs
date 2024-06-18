@@ -16,12 +16,14 @@ builder.Services.AddDefaultIdentity<Seller>(options => options.SignIn.RequireCon
     .AddEntityFrameworkStores<TheKonMarketplaceDbContext>();
 builder.Services.AddControllersWithViews();
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseDeveloperExceptionPage();
     app.UseMigrationsEndPoint();
 }
 else

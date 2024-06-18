@@ -4,9 +4,10 @@
 
 @foreach (var item in Model)
 {
-    <a >
+    <a asp-controller="Offer" asp-action="Detail" asp-route-id="@item.OfferId">
         <div class="card">
             <img src="@item.ImageUrl" alt="@item.Breed" class="card-img" />
+                
             <div class="card-body">
                 <h4 class="card-title">@item.Title</h4>
                 <p class="card-text">Breed: @item.Breed</p>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TheKonMarketplace.Data.Data;
 
@@ -11,9 +12,10 @@ using TheKonMarketplace.Data.Data;
 namespace TheKonMarketplace.Data.Migrations
 {
     [DbContext(typeof(TheKonMarketplaceDbContext))]
-    partial class TheKonMarketplaceDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240618064121_OfferAndSellerRelationFixed")]
+    partial class OfferAndSellerRelationFixed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

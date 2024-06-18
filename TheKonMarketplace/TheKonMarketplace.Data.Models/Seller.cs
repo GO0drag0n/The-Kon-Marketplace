@@ -14,6 +14,8 @@ namespace TheKonMarketplace.Data.Models
     using static Constants.EntityConstants.SellerConstants;
     public class Seller : IdentityUser
     {
-        public ICollection<Offer> Offers { get; set; }
+
+        public ICollection<Offer> Offers { get; set; } = new List<Offer>();
+
     }
 }

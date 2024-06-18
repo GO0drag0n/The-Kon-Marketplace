@@ -14,7 +14,14 @@ namespace TheKonMarketplace.Data.Models.Configurations
     {
         public void Configure(EntityTypeBuilder<Offer> builder)
         {
-            builder.HasData(DataGenerator.SeedOffer());
+/*            builder.Property(o => o.Title).IsRequired().HasMaxLength(100);
+            builder.HasOne(o => o.Seller)
+                   .WithMany(s => s.Offers)
+                   .HasForeignKey(o => o.UserId)
+                   .IsRequired(); 
+*/
+
+            /*builder.HasData(DataGenerator.SeedOffer());*/
         }
 
     }
